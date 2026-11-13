@@ -2,7 +2,7 @@ import requests
 
 username = input ("Github uername:")
 
-url = f"https://api.github.com/users/1{username}"
+url = f"https://api.github.com/users/{username}"
 
 data = requests.get(url).json()
 
